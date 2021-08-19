@@ -88,49 +88,8 @@ class Hand:
         return minscore
     
 
+# construction
+h = Hand('2♠ 3♠ 4♠ 5♠ 3♦ 3♥ 4♥ 8♦ Q♠ K♠')
 
-
-
-cards = '2♠ 3♠ 4♠ 5♠ 3♦ 3♥ 4♥ 8♦ Q♠ K♠'
-newcard = 'A♠'
-
-cards = '5♠ 4♠ 3♣ 8♠ 5♦ 6♠ 3♦'
-newcard = 'A♥'
-
-cards1 = '5♦ 8♣ 3♥ 6♦ 4♥ 9♥ 8♦'
-newcard1 = 'Q♠'
-
-cards1 = '5♥ 3♥ A♥ 8♥ 6♣ 2♠ 5♦'
-newcard1 = '4♦'
-
-cards1 = '3♥ 2♦ 4♥ 4♠ A♠ 3♦ A♥'
-newcard1 = 'K♥'
-
-cards1 = '5♦ 6♠ 2♣ 2♥ 5♣ 8♥ 6♥'
-newcard1 = 'J♠'
-
-cards = '4♦ A♥ A♣ A♠ 5♦ 2♦ A♦'
-newcard = '3♦'
-
-cards = cards.split()
-
-h = Hand(cards)
-
-#print(h.cards)
-#input('get_hand? ')
-
-#print(h.get_hand())
-#print(h.cards)
-#input('get_score? ')
-
-#print(h.get_score())
-#print(h.cards)
-#input('add_card? ')
-
-print(h.add_card(newcard))
-#print(h.cards)
-#input('get_score? ')
-
-print(h.get_score())
-print(h.cards)
-
+# add card
+h.add_card('A♠')
